@@ -4,8 +4,8 @@ import {Route, Link, useParams, useRouteMatch } from 'react-router-dom'
 export default function MovieList(props) {
   return (
     <div className="movie-list">
-      {props.movies.map(movie => (
-        <Link key={movie.id} to={`/Movies/MovieList/${movie.id}`}> <MovieDetails key={movie.id} movie={movie} /></Link>
+      {props.movies.map(mov => (
+        <Link key={mov.id} to={`/Movies/MovieList/${mov.id}`}> <MovieDetails key={mov.id} movie={mov} /></Link>
       ))}
     </div>
   );
